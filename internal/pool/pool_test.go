@@ -88,7 +88,6 @@ func TestNew_Race(t *testing.T) {
 	// Run a number of goroutines that read and write pool object fields to
 	// tease out races.
 	for i := range 1_000 {
-		i := i
 
 		wg.Go(func() {
 
